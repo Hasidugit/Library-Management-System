@@ -36,6 +36,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.lbmembername = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -59,7 +60,6 @@
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.button2 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxmember)).BeginInit();
             this.panel1.SuspendLayout();
@@ -85,7 +85,7 @@
             this.groupBox1.Size = new System.Drawing.Size(319, 309);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Book";
+            this.groupBox1.Text = "Member";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // lbmemberemail
@@ -117,7 +117,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(218, 251);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 31);
+            this.button1.Size = new System.Drawing.Size(95, 31);
             this.button1.TabIndex = 1;
             this.button1.Text = "Search";
             this.button1.UseVisualStyleBackColor = true;
@@ -144,6 +144,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(682, 595);
             this.panel1.TabIndex = 1;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(6, 11);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(173, 36);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Issue Book";
             // 
             // panel2
             // 
@@ -190,7 +200,7 @@
             this.panel3.BackColor = System.Drawing.Color.Violet;
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.lbidbook);
-            this.panel3.Location = new System.Drawing.Point(324, 22);
+            this.panel3.Location = new System.Drawing.Point(351, 40);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(241, 63);
             this.panel3.TabIndex = 0;
@@ -220,10 +230,11 @@
             this.panel4.BackColor = System.Drawing.Color.Violet;
             this.panel4.Controls.Add(this.lbidmember);
             this.panel4.Controls.Add(this.label2);
-            this.panel4.Location = new System.Drawing.Point(18, 22);
+            this.panel4.Location = new System.Drawing.Point(27, 40);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(241, 63);
             this.panel4.TabIndex = 1;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // lbidmember
             // 
@@ -256,10 +267,10 @@
             this.groupBox2.Controls.Add(this.btnbooksearch);
             this.groupBox2.Location = new System.Drawing.Point(350, 58);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(312, 309);
+            this.groupBox2.Size = new System.Drawing.Size(318, 309);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Member";
+            this.groupBox2.Text = "Book";
             // 
             // lbavilable
             // 
@@ -321,7 +332,7 @@
             this.btnbooksearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnbooksearch.Location = new System.Drawing.Point(221, 251);
             this.btnbooksearch.Name = "btnbooksearch";
-            this.btnbooksearch.Size = new System.Drawing.Size(75, 27);
+            this.btnbooksearch.Size = new System.Drawing.Size(91, 27);
             this.btnbooksearch.TabIndex = 6;
             this.btnbooksearch.Text = "Search";
             this.btnbooksearch.UseVisualStyleBackColor = true;
@@ -371,16 +382,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(736, 62);
             this.panel5.TabIndex = 6;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(6, 11);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(173, 36);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Issue Book";
             // 
             // issuebookscreen
             // 

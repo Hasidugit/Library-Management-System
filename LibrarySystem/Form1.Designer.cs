@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnissuebook = new System.Windows.Forms.Button();
@@ -37,16 +38,20 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Chocolate;
+            this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.btnissuebook);
@@ -56,6 +61,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(284, 600);
             this.panel1.TabIndex = 0;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(18, 17);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(249, 131);
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
             // 
             // button3
             // 
@@ -68,6 +81,7 @@
             this.button3.TabIndex = 4;
             this.button3.Text = "Logger";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -80,6 +94,7 @@
             this.button2.TabIndex = 3;
             this.button2.Text = "Return book";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnissuebook
             // 
@@ -126,7 +141,7 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(301, 17);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(770, 87);
+            this.panel2.Size = new System.Drawing.Size(770, 118);
             this.panel2.TabIndex = 1;
             // 
             // label1
@@ -141,28 +156,28 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Location = new System.Drawing.Point(301, 118);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(752, 495);
+            this.panel3.Size = new System.Drawing.Size(770, 495);
             this.panel3.TabIndex = 2;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Chocolate;
-            this.panel5.Location = new System.Drawing.Point(21, 236);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(713, 184);
-            this.panel5.TabIndex = 1;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Chocolate;
+            this.panel4.Controls.Add(this.pictureBox1);
             this.panel4.Location = new System.Drawing.Point(21, 23);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(713, 184);
+            this.panel4.Size = new System.Drawing.Size(713, 464);
             this.panel4.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(-18, -20);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(764, 484);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
@@ -173,12 +188,15 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Library System";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -194,8 +212,9 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnissuebook;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 
